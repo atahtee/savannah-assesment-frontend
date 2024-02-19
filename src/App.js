@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
@@ -14,7 +14,7 @@ axios.defaults.withCredentials = true;
 function App() {
   return (
     <UserContextProvider>
-      <Navbar />
+      {/* <Navbar /> */}
       <Toaster position="bottom-center" toastOptions={{ duration: 2000 }} />
       <Routes>
         <Route path="/" element={<HomePage />} />
