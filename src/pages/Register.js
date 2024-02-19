@@ -37,9 +37,9 @@ const Register = () => {
   };
 
   return (
-    <div className="flex items-center justify-center h-screen bg-gray-100">
-      <div className="w-full md:w-1/2 px-4">
-        <h2 className="text-2xl font-bold mb-6">
+    <div className="flex flex-col md:flex-row items-center justify-center h-screen bg-gray-100">
+      <div className="w-full md:w-1/2 px-4 mb-8 md:mb-0">
+        <h2 className="text-2xl font-bold mb-6 text-center md:text-left">
           Welcome to the Health Transformation Adventure! We're embarking on a
           mission to revolutionize health systems through the magic of
           technology. Hold on tight as we dive into the world of data, exploring
@@ -48,14 +48,14 @@ const Register = () => {
           Informatics. 🤖 Don't worry, our code is as healthy as it gets... we
           think! Ready to join us on this exciting ride? 
           <button
-            className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
+            className="block mx-auto md:mx-0 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded"
             onClick={registerUser}
           >
             Start the Adventure! 🌟
           </button>
         </h2>
       </div>
-      <div className="bg-white w-full md:max-w-md p-8 rounded-md shadow-md ml-4">
+      <div className="bg-white w-full md:max-w-md p-8 rounded-md shadow-md mx-4 md:mx-0">
         <h2 className="text-3xl font-bold mb-6 text-center">Assessment</h2>
         <form>
           <div className="mb-4">
@@ -94,23 +94,23 @@ const Register = () => {
               onChange={(e) => setData({ ...data, password: e.target.value })}
             />
           </div>
-          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0 mb-4">
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
             <button
-              className="w-full md:w-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               type="submit"
               onClick={registerUser}
             >
               Register
             </button>
             <button
-              className="w-full md:w-1/2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
               type="submit"
               onClick={() => navigate("/login")}
             >
               Login
             </button>
           </div>
-          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
+          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0 mt-4">
             <button
               className="w-full bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
               onClick={google}
