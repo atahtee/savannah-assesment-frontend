@@ -8,7 +8,7 @@ import { Toaster } from "react-hot-toast";
 import { UserContextProvider } from "./context/userContext";
 import Dashboard from "./pages/Dashboard";
 
-axios.defaults.baseURL = "http://localhost:8000";
+axios.defaults.baseURL = "https://sil-assesment-server.onrender.com";
 axios.defaults.withCredentials = true;
 
 function App() {
